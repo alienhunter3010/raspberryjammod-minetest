@@ -318,6 +318,9 @@ end
 
 minetest.register_on_chat_message(function(name, message)
     local id = get_player_id_by_name(name)
+    if id == null then
+        return false
+    end
     table.insert(chat_record, id .. "," .. sanitize_pipe(message))
     return false
 end)

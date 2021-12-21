@@ -52,7 +52,7 @@ block.MOSS_STONE         =Block(48)
 block.OBSIDIAN           =Block(49)
 block.TORCH              =Block(50)
 block.FIRE               =Block(51)
-block.STAIR_WOOD        =Block(53)
+block.STAIR_WOOD         =Block(53)
 block.CHEST              =Block(54)
 block.DIAMOND_ORE        =Block(56)
 block.DIAMOND_BLOCK      =Block(57)
@@ -62,7 +62,7 @@ block.FURNACE_INACTIVE   =Block(61)
 block.FURNACE_ACTIVE     =Block(62)
 block.DOOR_WOOD          =Block(64)
 block.LADDER             =Block(65)
-block.STAIR_COBBLESTONE =Block(67)
+block.STAIR_COBBLESTONE  =Block(67)
 block.DOOR_IRON          =Block(71)
 block.REDSTONE_ORE       =Block(73)
 block.STONE_BUTTON       =Block(77)
@@ -75,7 +75,7 @@ block.SUGAR_CANE         =Block(83)
 block.FENCE              =Block(85)
 block.GLOWSTONE_BLOCK    =Block(89)
 block.BEDROCK_INVISIBLE  =Block(95)
-block.STAINED_GLASS=      Block(95)
+block.STAINED_GLASS      =Block(95)
 block.TRAPDOOR           =Block(96)
 block.IRON_TRAPDOOR      =Block(167)
 block.STONE_BRICK        =Block(98)
@@ -188,7 +188,8 @@ block.LEAVES_DARK_OAK_DECAYABLE_CD=Block(block.LEAVES2, 9)
 block.LEAVES_ACACIA_PERMANENT_CD=Block(block.LEAVES2, 12)
 block.LEAVES_DARK_OAK_PERMANENT_CD=Block(block.LEAVES2, 13)
 
-block.OBSIDIAN_GLASS           =Block(1001)
+block.OBSIDIAN_GLASS = Block(1001)
+block.FENCE_RAIL     = Block(1002)
 
 local to_node={}
 local from_node={}
@@ -272,7 +273,7 @@ translate(block.FENCE,"default:fence_wood")
 translate(block.GLOWSTONE_BLOCK,"default:meselamp") -- fix
 --translate(block.BEDROCK_INVISIBLE,"default:")
 translate(block.STONE_BRICK,"default:stonebrick")
-translate(block.GLASS_PANE,"default:glass") -- fix
+translate(block.GLASS_PANE,"xpanes:pane_flat") -- fix
 --translate(block.MELON,"default:")
 translate(block.WOOD_SLAB_DOUBLE,"default:wood") --fix
 --translate(block.FENCE_GATE,"default:")
@@ -413,6 +414,33 @@ translate(Block(block.STONE_SLAB,7),"stairs:slab_desert_stonebrick",0) -- FIX: n
 translate(Block(block.STONE_SLAB,14),"stairs:slab_desert_stonebrick",20)
 translate(Block(block.STONE_SLAB,8),"stairs:slab_desert_stone",0) -- FIX: quartz
 translate(Block(block.STONE_SLAB,15),"stairs:slab_desert_stone",20)
+
+translate(Block(block.FENCE,0),"default:fence_wood",0)
+translate(Block(block.FENCE,8),"default:fence_wood",20)
+translate(Block(block.FENCE,1),"default:fence_pine_wood",0)
+translate(Block(block.FENCE,9),"default:fence_pine_wood",20)
+translate(Block(block.FENCE,2),"default:fence_wood",0)  -- FIX: birch
+translate(Block(block.FENCE,10),"default:fence_wood",20)
+translate(Block(block.FENCE,3),"default:fence_junglewood",0)
+translate(Block(block.FENCE,11),"default:fence_junglewood",20)
+translate(Block(block.FENCE,4),"default:fence_acacia_wood",0)
+translate(Block(block.FENCE,12),"default:fence_acacia_wood",20)
+translate(Block(block.FENCE,5),"default:fence_wood",0) -- FIX: dark oak
+translate(Block(block.FENCE,13),"default:fence_wood",20)
+
+translate(Block(block.FENCE_RAIL,0),"default:fence_rail_wood",0)
+translate(Block(block.FENCE_RAIL,8),"default:fence_rail_wood",20)
+translate(Block(block.FENCE_RAIL,1),"default:fence_rail_pine_wood",0)
+translate(Block(block.FENCE_RAIL,9),"default:fence_rail_pine_wood",20)
+translate(Block(block.FENCE_RAIL,2),"default:fence_rail_wood",0)  -- FIX: birch
+translate(Block(block.FENCE_RAIL,10),"default:fence_rail_wood",20)
+translate(Block(block.FENCE_RAIL,3),"default:fence_rail_junglewood",0)
+translate(Block(block.FENCE_RAIL,11),"default:fence_rail_junglewood",20)
+translate(Block(block.FENCE_RAIL,4),"default:fence_rail_acacia_wood",0)
+translate(Block(block.FENCE_RAIL,12),"default:fence_rail_acacia_wood",20)
+translate(Block(block.FENCE_RAIL,5),"default:fence_rail_wood",0) -- FIX: dark oak
+translate(Block(block.FENCE_RAIL,13),"default:fence_rail_wood",20)
+
 
 translate(block.OBSIDIAN_GLASS,"default:obsidian_glass")
 
